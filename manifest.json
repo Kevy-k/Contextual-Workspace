@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Dashboard",
+  "version": "1.0",
+  "description": "Replaces the new tab page with a custom dashboard.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "host_permissions": [
+    "<all_urls>",
+    "https://api-inference.huggingface.co/"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
