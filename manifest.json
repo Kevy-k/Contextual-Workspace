@@ -1,22 +1,26 @@
 {
   "manifest_version": 3,
-  "name": "Custom Dashboard",
+  "name": "Intelligent Contextual Workspaces",
   "version": "1.0",
-  "description": "Replaces the new tab page with a custom dashboard.",
+  "description": "Automatically classifies tabs and provides a hover-activated workspace panel.",
   "permissions": [
-    "storage",
     "tabs",
-    "scripting"
+    "scripting",
+    "storage",
+    "tabGroups"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "https://api-inference.huggingface.co/"
   ],
   "background": {
     "service_worker": "background.js",
     "type": "module"
   },
-  "host_permissions": [
-    "<all_urls>",
-    "https://api-inference.huggingface.co/"
-  ],
   "chrome_url_overrides": {
-    "newtab": "newtab.html"
+    "newtab": "design4.html"
+  },
+  "action": {
+    "default_title": "Workspace Dashboard"
   }
 }
