@@ -18,7 +18,7 @@
     "type": "module"
   },
   "chrome_url_overrides": {
-    "newtab": "design4.html"
+    "newtab": "D5_index.html"
   },
   "action": {
     "default_title": "Workspace Dashboard"

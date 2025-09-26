@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="D5_style.css">
+</head>
+<body>
+
+    <!-- Toggle Button - Always visible when sidebar is hidden -->
+    <div class="toggle-button" id="toggle-button">
+        <!-- Arrow SVG for Open/Close -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M234.32,111.68,144.32,21.68a16,16,0,0,0-22.64,0L32,112,21.68,122.32a16,16,0,0,0,0,22.64L111.68,234.32a16,16,0,0,0,22.64,0L234.32,145a16,16,0,0,0,0-22.64ZM128,213.31,42.69,128,128,42.69,213.31,128Z"></path></svg>
+    </div>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header" id="sidebar-toggle">
+             <!-- Arrow SVG for Close -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path fill="currentColor" d="M234.32,111.68,144.32,21.68a16,16,0,0,0-22.64,0L32,112,21.68,122.32a16,16,0,0,0,0,22.64L111.68,234.32a16,16,0,0,0,22.64,0L234.32,145a16,16,0,0,0,0-22.64ZM128,213.31,42.69,128,128,42.69,213.31,128Z"></path></svg>
+        </div>
+
+        <div class="workspaces">
+            <a href="#" class="workspace-item active" id="active-workspace">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                <span>Workspace 1</span>
+            </a>
+            <div class="hidden-workspaces">
+                <a href="#" class="workspace-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    <span>Workspace 2</span>
+                </a>
+                <a href="#" class="workspace-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    <span>Workspace 3</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <!-- Settings SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        </div>
+    </nav>
+
+    <main class="main-content" id="main-content">
+        <header class="main-header">
+            <div class="search-bar">
+                <input type="text" placeholder="Search Google or type a URL">
+            </div>
+            <div class="user-profile">
+                <span>Hello, User!</span>
+            </div>
+        </header>
+
+        <!-- Main content area -->
+        <div class="widgets-grid">
+            <!-- Widgets will go here in the future -->
+        </div>
+
+        <footer class="main-footer">
+            <div id="time"></div>
+            <div id="greeting"></div>
+        </footer>
+    </main>
+    
+    <!-- BOTTOM DOCK CONTAINER -->
+    <div class="bottom-bar" id="bottom-bar">
+        <div class="dock-container" id="dock-container">
+            <div class="logo-row">
+                <!-- Sample Logos - Ensuring enough items to force scroll -->
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/3d3d3d/ffffff?text=Home" alt="Home">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/FF9900/ffffff?text=Mail" alt="Mail">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/007bff/ffffff?text=Chat" alt="Chat">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/28a745/ffffff?text=Tasks" alt="Tasks">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/6f42c1/ffffff?text=Cal" alt="Calendar">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/dc3545/ffffff?text=News" alt="News">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/fd7e14/ffffff?text=Drive" alt="Drive">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/17a2b8/ffffff?text=Maps" alt="Maps">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/e83e8c/ffffff?text=Music" alt="Music">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/6610f2/ffffff?text=Code" alt="Code Editor">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/20c997/ffffff?text=Docs" alt="Documents">
+                </a>
+                 <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/ffc107/333333?text=Photos" alt="Photos">
+                </a>
+                <a href="#" class="logo-item">
+                    <img src="https://placehold.co/60x60/007bff/ffffff?text=Store" alt="Store">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="D5_script.js"></script>
+
+</body>
+</html>
