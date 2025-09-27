@@ -249,7 +249,7 @@ body {
 
 .logo-row {
     display: flex;
-    gap: 12px;
+    gap: 14px;
     align-items: flex-end;
 }
 

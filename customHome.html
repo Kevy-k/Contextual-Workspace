@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tab</title>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="customHome.css" />
+  </head>
+  <body>
+    <!-- Toggle Button - Always visible when sidebar is hidden -->
+    <div class="toggle-button" id="toggle-button">
+      <!-- Arrow SVG for Open/Close -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 256 256"
+      >
+        <path
+          fill="currentColor"
+          d="M234.32,111.68,144.32,21.68a16,16,0,0,0-22.64,0L32,112,21.68,122.32a16,16,0,0,0,0,22.64L111.68,234.32a16,16,0,0,0,22.64,0L234.32,145a16,16,0,0,0,0-22.64ZM128,213.31,42.69,128,128,42.69,213.31,128Z"
+        ></path>
+      </svg>
+    </div>
+
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header" id="sidebar-toggle">
+        <!-- Arrow SVG for Close -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 256 256"
+        >
+          <path
+            fill="currentColor"
+            d="M234.32,111.68,144.32,21.68a16,16,0,0,0-22.64,0L32,112,21.68,122.32a16,16,0,0,0,0,22.64L111.68,234.32a16,16,0,0,0,22.64,0L234.32,145a16,16,0,0,0,0-22.64ZM128,213.31,42.69,128,128,42.69,213.31,128Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="workspaces">
+        <a href="#" class="workspace-item active" id="active-workspace">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+            ></path>
+          </svg>
+          <span>Programming </span>
+        </a>
+        <div class="hidden-workspaces">
+          <a href="#" class="workspace-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+            <span>Work</span>
+          </a>
+          <a href="#" class="workspace-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+            <span>Social Media</span>
+          </a>
+          <a href="#" class="workspace-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+            <span>News</span>
+          </a>
+          <a href="#" class="workspace-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+            <span>Shopping</span>
+          </a>
+          <a href="#" class="workspace-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+            <span>Research</span>
+          </a>
+          <a href="#" class="workspace-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+            <span>Finance</span>
+          </a>
+          <a href="#" class="workspace-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+            <span>Entertainment</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <!-- Settings SVG -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="3"></circle>
+          <path
+            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+          ></path>
+        </svg>
+      </div>
+    </nav>
+
+    <main class="main-content" id="main-content">
+      <header class="main-header">
+        <div class="search-bar">
+          <form
+            action="https://www.google.com/search"
+            method="GET"
+          >
+            <input
+              type="text"
+              name="q"
+              placeholder="Search Google or type a URL"
+            />
+          </form>
+        </div>
+        <div class="user-profile">
+          <span>Hello, User!</span>
+        </div>
+      </header>
+
+      <!-- Main content area -->
+      <div class="widgets-grid">
+        <!-- Widgets will go here in the future -->
+      </div>
+
+      <footer class="main-footer">
+        <div id="time"></div>
+        <div id="greeting"></div>
+      </footer>
+    </main>
+
+    <!-- BOTTOM DOCK CONTAINER -->
+    <div class="bottom-bar" id="bottom-bar">
+      <div class="dock-container" id="dock-container">
+        <div class="logo-row">
+          <!-- Sample Logos - Ensuring enough items to force scroll -->
+          <a href="https://mail.google.com" class="logo-item" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png"
+              alt="Gmail"
+            />
+          </a>
+
+          <!-- Link to Google Drive -->
+          <a href="https://drive.google.com" class="logo-item" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg"
+              alt="Google Drive"
+            />
+          </a>
+          <a href="https://maps.google.com" class="logo-item" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Google_Maps_icon_%282020%29.svg/512px-Google_Maps_icon_%282020%29.svg.png"
+              alt="Google Maps"
+            />
+          </a>
+          <a href="https://sheets.google.com" class="logo-item" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_%282014-2020%29.svg/1200px-Google_Sheets_logo_%282014-2020%29.svg.png"
+              alt="Google Sheets"
+            />
+          </a>
+          <a href="https://docs.google.com" class="logo-item" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Google_Docs_logo_%282014-2020%29.svg/1200px-Google_Docs_logo_%282014-2020%29.svg.png"
+              alt="Google Docs"
+            />
+          </a>
+          <!-- Link to GitHub -->
+          <a href="https://github.com" class="logo-item" target="_blank">
+            <img
+              src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+              alt="GitHub"
+            />
+          </a>
+
+          <!-- Link to YouTube -->
+          <a href="https://youtube.com" class="logo-item" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+              alt="YouTube"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="customHome.js"></script>
+  </body>
+</html>
