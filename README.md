@@ -136,10 +136,10 @@ workspace-extension/
 
 | Name | Role | Contribution |
 |------|------|--------------|
-| [Kevin Koshy] | Full-Stack Developer | Core logic, UI/UX, workspace management |
-| [Nandhu Ramdas] | Frontend Developer | Animations, dock interactions, responsive design |
-| [P S Abijith] | UX Designer | User flow, visual design, accessibility |
-| [Amal Togi] | Frontend Developer | Animations, dock interactions, responsive design |
+| Kevin Koshy | Full-Stack Developer | Core logic, UI/UX, workspace management |
+| Nandhu Ramdas | Frontend Developer | Animations, dock interactions, responsive design |
+| P S Abijith | UX Designer | User flow, visual design, accessibility |
+| Amal Togi | Frontend Developer | Animations, dock interactions, responsive design |
 
 *Update with actual team member details*
 
