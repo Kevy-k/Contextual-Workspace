@@ -21,6 +21,12 @@
     "newtab": "customHome.html"
   },
   "action": {
-    "default_title": "Workspace Dashboard"
+    "default_title": "Workspace Dashboard",
+    "default_popup": "popup.html"
+  },
+  "icons":{
+    "16": "extensionLogo.png",
+    "48": "extensionLogo.png",
+    "128": "extensionLogo.png"
   }
 }

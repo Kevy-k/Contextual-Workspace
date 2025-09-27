@@ -104,4 +104,25 @@
     
     // Initial refresh when the script is first injected
     refreshPanel();
+    function checkFullscreenVideo() {
+    const isFullscreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+    
+    if (isFullscreen) {
+      quickActionButton.style.display = 'none';
+    } else {
+      quickActionButton.style.display = 'flex';
+    }
+  }
+
+  // Listen for fullscreen changes
+  document.addEventListener('fullscreenchange', checkFullscreenVideo);
+  document.addEventListener('webkitfullscreenchange', checkFullscreenVideo);
+  document.addEventListener('mozfullscreenchange', checkFullscreenVideo);
+  document.addEventListener('msfullscreenchange', checkFullscreenVideo);
+
+  // --- THE FIX: Append to documentElement instead of body ---
+  document.documentElement.appendChild(container);
+
 })();
+
+
